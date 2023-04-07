@@ -1,0 +1,15 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time"
+    ],
+    "cell_measures": "area: areacello",
+    "cell_methods": "area: mean where sea time: mean",
+    "description": "This may differ from \"surface temperature\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+    "history": "none",
+    "interval_operation": "2700 s",
+    "interval_write": "1 month",
+    "long_name": "Sea Surface Temperature",
+    "online_operation": "average",
+    "standard_name": "sea_surface_temperature",
+    "units": "degC"
+}

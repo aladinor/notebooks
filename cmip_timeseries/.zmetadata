@@ -1,0 +1,1599 @@
+{
+    "metadata": {
+        ".zattrs": {},
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "CESM2/.zattrs": {},
+        "CESM2/.zgroup": {
+            "zarr_format": 2
+        },
+        "CESM2/historical/.zattrs": {
+            "Conventions": "CF-1.7 CMIP-6.2",
+            "activity_id": "CMIP",
+            "branch_method": "standard",
+            "branch_time_in_child": 674885.0,
+            "branch_time_in_parent": 182500.0,
+            "case_id": "18",
+            "cesm_casename": "b.e21.BHIST.f09_g17.CMIP6-historical.004",
+            "contact": "cesm_cmip6@ucar.edu",
+            "creation_date": "2019-01-18T17:32:21Z",
+            "data_specs_version": "01.00.29",
+            "experiment": "all-forcing simulation of the recent past",
+            "experiment_id": "historical",
+            "external_variables": "areacello",
+            "forcing_index": 1,
+            "frequency": "mon",
+            "further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NCAR.CESM2.historical.none.r4i1p1f1",
+            "grid": "native gx1v7 displaced pole grid (384x320 latxlon)",
+            "grid_label": "gn",
+            "initialization_index": 1,
+            "institution": "National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA",
+            "institution_id": "NCAR",
+            "license": "CMIP6 model data produced by <The National Center for Atmospheric Research> is licensed under a Creative Commons Attribution-[]ShareAlike 4.0 International License (https://creativecommons.org/licenses/). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file)[]. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+            "mip_era": "CMIP6",
+            "model_doi_url": "https://doi.org/10.5065/D67H1H0V",
+            "netcdf_tracking_ids": "hdl:21.14100/b6db75cc-8b70-49a3-b115-d8ef87c3c263",
+            "nominal_resolution": "100 km",
+            "parent_activity_id": "CMIP",
+            "parent_experiment_id": "piControl",
+            "parent_mip_era": "CMIP6",
+            "parent_source_id": "CESM2",
+            "parent_time_units": "days since 0001-01-01 00:00:00",
+            "parent_variant_label": "r1i1p1f1",
+            "physics_index": 1,
+            "product": "model-output",
+            "realization_index": 4,
+            "realm": "ocean",
+            "source": "CESM2 (2017): atmosphere: CAM6 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb); ocean: POP2 (320x384 longitude/latitude; 60 levels; top grid cell 0-10 m); sea_ice: CICE5.1 (same grid as ocean); land: CLM5 0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb); aerosol: MAM4 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb); atmoschem: MAM4 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb); landIce: CISM2.1; ocnBgchem: MARBL (320x384 longitude/latitude; 60 levels; top grid cell 0-10 m)",
+            "source_id": "CESM2",
+            "source_type": "AOGCM BGC",
+            "status": "2019-10-25;created;by nhn2@columbia.edu",
+            "sub_experiment": "none",
+            "sub_experiment_id": "none",
+            "table_id": "Omon",
+            "tracking_id": "hdl:21.14100/b6db75cc-8b70-49a3-b115-d8ef87c3c263",
+            "variable_id": "tos",
+            "variant_info": "CMIP6 20th century experiments (1850-2014) with CAM6, interactive land (CLM5), coupled ocean (POP2) with biogeochemistry (MARBL), interactive sea ice (CICE5.1), and non-evolving land ice (CISM2.1)\r\n",
+            "variant_label": "r4i1p1f1",
+            "version_id": "v20190308"
+        },
+        "CESM2/historical/.zgroup": {
+            "zarr_format": 2
+        },
+        "CESM2/historical/time/.zarray": {
+            "chunks": [
+                1980
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1980
+            ],
+            "zarr_format": 2
+        },
+        "CESM2/historical/time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "calendar": "proleptic_gregorian",
+            "units": "microseconds since 1850-01-15 12:59:59.999997"
+        },
+        "CESM2/historical/time_bounds/.zarray": {
+            "chunks": [
+                1980,
+                2
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1980,
+                2
+            ],
+            "zarr_format": 2
+        },
+        "CESM2/historical/time_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "bnds"
+            ],
+            "calendar": "noleap",
+            "units": "microseconds since 1850-01-01 02:00:00.000003"
+        },
+        "CESM2/historical/tos/.zarray": {
+            "chunks": [
+                1980
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1980
+            ],
+            "zarr_format": 2
+        },
+        "CESM2/historical/tos/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "cell_measures": "area: areacello",
+            "cell_methods": "area: mean where sea time: mean",
+            "comment": "This may differ from \"surface temperature\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+            "description": "This may differ from \"surface temperature\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+            "frequency": "mon",
+            "id": "tos",
+            "long_name": "Sea Surface Temperature",
+            "mipTable": "Omon",
+            "out_name": "tos",
+            "prov": "Omon ((isd.003))",
+            "realm": "ocean",
+            "standard_name": "sea_surface_temperature",
+            "time": "time",
+            "time_label": "time-mean",
+            "time_title": "Temporal mean",
+            "title": "Sea Surface Temperature",
+            "type": "real",
+            "units": "degC",
+            "variable_id": "tos"
+        },
+        "CESM2/ssp126/.zattrs": {
+            "Conventions": "CF-1.7 CMIP-6.2",
+            "activity_id": "ScenarioMIP",
+            "branch_method": "standard",
+            "branch_time_in_child": 735110.0,
+            "branch_time_in_parent": 735110.0,
+            "case_id": "1729",
+            "cesm_casename": "b.e21.BSSP126cmip6.f09_g17.CMIP6-SSP1-2.6.103",
+            "contact": "cesm_cmip6@ucar.edu",
+            "creation_date": "2020-05-26T20:45:38Z",
+            "data_specs_version": "01.00.31",
+            "experiment": "SSP-based RCP scenario with low radiative forcing by the end of the century.  Following approximately RCP2.6 global forcing pathway with SSP1 socioeconomic conditions. Radiative forcing reaches a level of 2.6 W/m2 in 2100. Concentration-driven.",
+            "experiment_id": "ssp126",
+            "external_variables": "areacello",
+            "forcing_index": 1,
+            "frequency": "mon",
+            "further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NCAR.CESM2.ssp126.none.r4i1p1f1",
+            "grid": "native gx1v7 displaced pole grid (384x320 latxlon)",
+            "grid_label": "gn",
+            "initialization_index": 1,
+            "institution": "National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA",
+            "institution_id": "NCAR",
+            "license": "CMIP6 model data produced by <The National Center for Atmospheric Research> is licensed under a Creative Commons Attribution-[]ShareAlike 4.0 International License (https://creativecommons.org/licenses/). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file)[]. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+            "mip_era": "CMIP6",
+            "model_doi_url": "https://doi.org/10.5065/D67H1H0V",
+            "netcdf_tracking_ids": "hdl:21.14100/35652417-1693-4d7e-9f98-db4bda0451f5\nhdl:21.14100/35652417-1693-4d7e-9f98-db4bda0451f5",
+            "nominal_resolution": "100 km",
+            "parent_activity_id": "CMIP",
+            "parent_experiment_id": "historical",
+            "parent_mip_era": "CMIP6",
+            "parent_source_id": "CESM2",
+            "parent_time_units": "days since 0001-01-01 00:00:00",
+            "parent_variant_label": "r4i1p1f1",
+            "physics_index": 1,
+            "product": "model-output",
+            "realization_index": 4,
+            "realm": "ocean",
+            "source": "CESM2 (2017): atmosphere: CAM6 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb); ocean: POP2 (320x384 longitude/latitude; 60 levels; top grid cell 0-10 m); sea_ice: CICE5.1 (same grid as ocean); land: CLM5 0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb); aerosol: MAM4 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb); atmoschem: MAM4 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb); landIce: CISM2.1; ocnBgchem: MARBL (320x384 longitude/latitude; 60 levels; top grid cell 0-10 m)",
+            "source_id": "CESM2",
+            "source_type": "AOGCM BGC AER",
+            "status": "2020-06-06;created; by gcs.cmip6.ldeo@gmail.com",
+            "sub_experiment": "none",
+            "sub_experiment_id": "none",
+            "table_id": "Omon",
+            "tracking_id": "hdl:21.14100/35652417-1693-4d7e-9f98-db4bda0451f5\nhdl:21.14100/35652417-1693-4d7e-9f98-db4bda0451f5",
+            "variable_id": "tos",
+            "variant_info": "CMIP6 SSP1-2.6 experiments (2015-2100) with CAM6, interactive land (CLM5), coupled ocean (POP2) with biogeochemistry (MARBL), interactive sea ice (CICE5.1), and non-evolving land ice (CISM2.1).",
+            "variant_label": "r4i1p1f1",
+            "version_id": "v20200528"
+        },
+        "CESM2/ssp126/.zgroup": {
+            "zarr_format": 2
+        },
+        "CESM2/ssp126/time/.zarray": {
+            "chunks": [
+                1032
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032
+            ],
+            "zarr_format": 2
+        },
+        "CESM2/ssp126/time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "calendar": "proleptic_gregorian",
+            "units": "hours since 2015-01-15 13:00:00"
+        },
+        "CESM2/ssp126/time_bounds/.zarray": {
+            "chunks": [
+                1032,
+                2
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032,
+                2
+            ],
+            "zarr_format": 2
+        },
+        "CESM2/ssp126/time_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "bnds"
+            ],
+            "calendar": "noleap",
+            "units": "microseconds since 2015-01-01 02:00:00.000003"
+        },
+        "CESM2/ssp126/tos/.zarray": {
+            "chunks": [
+                1032
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032
+            ],
+            "zarr_format": 2
+        },
+        "CESM2/ssp126/tos/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "cell_measures": "area: areacello",
+            "cell_methods": "area: mean where sea time: mean",
+            "comment": "TEMP[:,0,:,:]",
+            "description": "This may differ from \"surface temperature\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+            "frequency": "mon",
+            "id": "tos",
+            "long_name": "Sea Surface Temperature",
+            "mipTable": "Omon",
+            "out_name": "tos",
+            "prov": "Omon ((isd.003))",
+            "realm": "ocean",
+            "standard_name": "sea_surface_temperature",
+            "time": "time",
+            "time_label": "time-mean",
+            "time_title": "Temporal mean",
+            "title": "Sea Surface Temperature",
+            "type": "real",
+            "units": "degC",
+            "variable_id": "tos"
+        },
+        "CESM2/ssp585/.zattrs": {
+            "Conventions": "CF-1.7 CMIP-6.2",
+            "activity_id": "ScenarioMIP",
+            "branch_method": "standard",
+            "branch_time_in_child": 735110.0,
+            "branch_time_in_parent": 735110.0,
+            "case_id": "1735",
+            "cesm_casename": "b.e21.BSSP585cmip6.f09_g17.CMIP6-SSP5-8.5.103",
+            "contact": "cesm_cmip6@ucar.edu",
+            "creation_date": "2020-05-27T21:07:30Z",
+            "data_specs_version": "01.00.31",
+            "experiment": "SSP-based RCP scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway with SSP5 socioeconomic conditions. Concentration-driven.",
+            "experiment_id": "ssp585",
+            "external_variables": "areacello",
+            "forcing_index": 1,
+            "frequency": "mon",
+            "further_info_url": "https://furtherinfo.es-doc.org/CMIP6.NCAR.CESM2.ssp585.none.r4i1p1f1",
+            "grid": "native gx1v7 displaced pole grid (384x320 latxlon)",
+            "grid_label": "gn",
+            "initialization_index": 1,
+            "institution": "National Center for Atmospheric Research, Climate and Global Dynamics Laboratory, 1850 Table Mesa Drive, Boulder, CO 80305, USA",
+            "institution_id": "NCAR",
+            "license": "CMIP6 model data produced by <The National Center for Atmospheric Research> is licensed under a Creative Commons Attribution-[]ShareAlike 4.0 International License (https://creativecommons.org/licenses/). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file)[]. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+            "mip_era": "CMIP6",
+            "model_doi_url": "https://doi.org/10.5065/D67H1H0V",
+            "netcdf_tracking_ids": "hdl:21.14100/68b741c9-b8f8-479d-b48c-6853b1c71e56\nhdl:21.14100/68b741c9-b8f8-479d-b48c-6853b1c71e56",
+            "nominal_resolution": "100 km",
+            "parent_activity_id": "CMIP",
+            "parent_experiment_id": "historical",
+            "parent_mip_era": "CMIP6",
+            "parent_source_id": "CESM2",
+            "parent_time_units": "days since 0001-01-01 00:00:00",
+            "parent_variant_label": "r4i1p1f1",
+            "physics_index": 1,
+            "product": "model-output",
+            "realization_index": 4,
+            "realm": "ocean",
+            "source": "CESM2 (2017): atmosphere: CAM6 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb); ocean: POP2 (320x384 longitude/latitude; 60 levels; top grid cell 0-10 m); sea_ice: CICE5.1 (same grid as ocean); land: CLM5 0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb); aerosol: MAM4 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb); atmoschem: MAM4 (0.9x1.25 finite volume grid; 288 x 192 longitude/latitude; 32 levels; top level 2.25 mb); landIce: CISM2.1; ocnBgchem: MARBL (320x384 longitude/latitude; 60 levels; top grid cell 0-10 m)",
+            "source_id": "CESM2",
+            "source_type": "AOGCM BGC AER",
+            "status": "2020-06-17;created; by gcs.cmip6.ldeo@gmail.com",
+            "sub_experiment": "none",
+            "sub_experiment_id": "none",
+            "table_id": "Omon",
+            "tracking_id": "hdl:21.14100/68b741c9-b8f8-479d-b48c-6853b1c71e56\nhdl:21.14100/68b741c9-b8f8-479d-b48c-6853b1c71e56",
+            "variable_id": "tos",
+            "variant_info": "CMIP6 SSP5-8.5 experiments (2015-2100) with CAM6, interactive land (CLM5), coupled ocean (POP2) with biogeochemistry (MARBL), interactive sea ice (CICE5.1), and non-evolving land ice (CISM2.1)",
+            "variant_label": "r4i1p1f1",
+            "version_id": "v20200528"
+        },
+        "CESM2/ssp585/.zgroup": {
+            "zarr_format": 2
+        },
+        "CESM2/ssp585/time/.zarray": {
+            "chunks": [
+                1032
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032
+            ],
+            "zarr_format": 2
+        },
+        "CESM2/ssp585/time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "calendar": "proleptic_gregorian",
+            "units": "hours since 2015-01-15 13:00:00"
+        },
+        "CESM2/ssp585/time_bounds/.zarray": {
+            "chunks": [
+                1032,
+                2
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032,
+                2
+            ],
+            "zarr_format": 2
+        },
+        "CESM2/ssp585/time_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "bnds"
+            ],
+            "calendar": "noleap",
+            "units": "microseconds since 2015-01-01 02:00:00.000003"
+        },
+        "CESM2/ssp585/tos/.zarray": {
+            "chunks": [
+                1032
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032
+            ],
+            "zarr_format": 2
+        },
+        "CESM2/ssp585/tos/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "cell_measures": "area: areacello",
+            "cell_methods": "area: mean where sea time: mean",
+            "comment": "TEMP[:,0,:,:]",
+            "description": "This may differ from \"surface temperature\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+            "frequency": "mon",
+            "id": "tos",
+            "long_name": "Sea Surface Temperature",
+            "mipTable": "Omon",
+            "out_name": "tos",
+            "prov": "Omon ((isd.003))",
+            "realm": "ocean",
+            "standard_name": "sea_surface_temperature",
+            "time": "time",
+            "time_label": "time-mean",
+            "time_title": "Temporal mean",
+            "title": "Sea Surface Temperature",
+            "type": "real",
+            "units": "degC",
+            "variable_id": "tos"
+        },
+        "IPSL-CM6A-LR/.zattrs": {},
+        "IPSL-CM6A-LR/.zgroup": {
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/historical/.zattrs": {
+            "CMIP6_CV_version": "cv=6.2.3.5-2-g63b123e",
+            "Conventions": "CF-1.7 CMIP-6.2",
+            "EXPID": "historical",
+            "NCO": "\"4.6.0\"",
+            "activity_id": "CMIP",
+            "branch_method": "standard",
+            "branch_time_in_child": 0.0,
+            "branch_time_in_parent": 36524.0,
+            "contact": "ipsl-cmip6@listes.ipsl.fr",
+            "creation_date": "2018-05-28T08:18:47Z",
+            "data_specs_version": "01.00.21",
+            "description": "CMIP6 historical",
+            "dr2xml_md5sum": "f91de4d48022fecbbf24061748ee64ec",
+            "dr2xml_version": "1.8",
+            "experiment": "all-forcing simulation of the recent past",
+            "experiment_id": "historical",
+            "external_variables": "areacello",
+            "forcing_index": 1,
+            "frequency": "mon",
+            "further_info_url": "https://furtherinfo.es-doc.org/CMIP6.IPSL.IPSL-CM6A-LR.historical.none.r4i1p1f1",
+            "grid": "native ocean tri-polar grid with 105 k ocean cells",
+            "grid_label": "gn",
+            "history": "Sat Dec  1 12:37:50 2018: ncatted -O -a realization_index,global,m,i,4 /ccc/work/cont003/cmip6/cmip6/onhold/CM61-LR-histEXT-03.1950/files+ext/tos_Omon_IPSL-CM6A-LR_historical_r4i1p1f1_gn_185001-201412.nc\nSat Dec  1 12:33:09 2018: ncatted -O -a realization_index,global,m,i,4 /ccc/work/cont003/cmip6/cmip6/onhold/CM61-LR-hist-03.1950/files/tos_Omon_IPSL-CM6A-LR_historical_r4i1p1f1_gn_185001-201412.nc\nSat Dec  1 12:19:25 2018: ncatted -O -a realization_index,global,m,i,4 /ccc/work/cont003/gencmip6/p86caub/IGCM_OUT/IPSLCM6/PROD/historical/CM61-LR-hist-03.1950/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_historical_r4i1p1f1_gn_185001-201412.nc\nThu Nov 29 19:28:50 2018: ncatted -O -a variant_label,global,m,c,r4i1p1f1 /ccc/work/cont003/gencmip6/p86caub/IGCM_OUT/IPSLCM6/PROD/historical/CM61-LR-hist-03.1950/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc\nThu Nov 29 19:28:50 2018: ncatted -O -a further_info_url,global,m,c,https://furtherinfo.es-doc.org/CMIP6.IPSL.IPSL-CM6A-LR.historical.none.r4i1p1f1 /ccc/work/cont003/gencmip6/p86caub/IGCM_OUT/IPSLCM6/PROD/historical/CM61-LR-hist-03.1950/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc\nThu Nov 29 19:28:49 2018: ncatted -O -a name,global,m,c,/ccc/work/cont003/gencmip6/p86caub/IGCM_OUT/IPSLCM6/PROD/historical/CM61-LR-hist-03.1950/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_historical_r4i1p1f1_gn_%start_date%-%end_date% /ccc/work/cont003/gencmip6/p86caub/IGCM_OUT/IPSLCM6/PROD/historical/CM61-LR-hist-03.1950/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_185001-201412.nc\nTue Sep  4 15:03:35 2018: ncatted -O -a further_info_url,global,m,c,https://furtherinfo.es-doc.org/CMIP6.IPSL.IPSL-CM6A-LR.historical.none.r1i1p1f1 /ccc/work/cont003/gencmip6/p86caub/IGCM_OUT/IPSLCM6/PROD/historical/CM61-LR-hist-03.1950/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_historical_r4i1p1f1_gn_185001-201412.nc\nTue Sep  4 15:03:35 2018: ncatted -O -a variant_label,global,m,c,r1i1p1f1 /ccc/work/cont003/gencmip6/p86caub/IGCM_OUT/IPSLCM6/PROD/historical/CM61-LR-hist-03.1950/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_historical_r4i1p1f1_gn_185001-201412.nc\nTue Sep  4 15:03:35 2018: ncatted -O -a name,global,m,c,/ccc/work/cont003/gencmip6/p86caub/IGCM_OUT/IPSLCM6/PROD/historical/CM61-LR-hist-03.1950/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_historical_r1i1p1f1_gn_%start_date%-%end_date% /ccc/work/cont003/gencmip6/p86caub/IGCM_OUT/IPSLCM6/PROD/historical/CM61-LR-hist-03.1950/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_historical_r4i1p1f1_gn_185001-201412.nc\nMon Sep  3 15:09:14 2018: ncatted -O -a parent_variant_label,global,m,c,r1i1p1f1 tos_Omon_IPSL-CM6A-LR_historical_r4i1p1f1_gn_185001-201412.nc\nMon Jul 16 21:34:21 2018: ncatted -O -a coordinates,area,o,c,nav_lon nav_lat /ccc/work/cont003/gencmip6/p86caub/IGCM_OUT/IPSLCM6/PROD/historical/CM61-LR-hist-03.1950/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_historical_r4i1p1f1_gn_185001-201412.nc\nnone",
+            "initialization_index": 1,
+            "institution": "Institut Pierre Simon Laplace, Paris 75252, France",
+            "institution_id": "IPSL",
+            "license": "CMIP6 model data produced by IPSL is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (https://creativecommons.org/licenses). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file) and at https://cmc.ipsl.fr/. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+            "mip_era": "CMIP6",
+            "model_version": "6.1.3",
+            "name": "/ccc/work/cont003/gencmip6/p86caub/IGCM_OUT/IPSLCM6/PROD/historical/CM61-LR-hist-03.1950/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_historical_r4i1p1f1_gn_%start_date%-%end_date%",
+            "netcdf_tracking_ids": "hdl:21.14100/dc824b97-b288-4ec0-adde-8dbcfa3b0095",
+            "nominal_resolution": "100 km",
+            "parent_activity_id": "CMIP",
+            "parent_experiment_id": "piControl",
+            "parent_mip_era": "CMIP6",
+            "parent_source_id": "IPSL-CM6A-LR",
+            "parent_time_units": "days since 1850-01-01 00:00:00",
+            "parent_variant_label": "r1i1p1f1",
+            "physics_index": 1,
+            "product": "model-output",
+            "realization_index": 4,
+            "realm": "ocean",
+            "source": "IPSL-CM6A-LR (2017):  atmos: LMDZ (NPv6, N96; 144 x 143 longitude/latitude; 79 levels; top level 40000 m) land: ORCHIDEE (v2.0, Water/Carbon/Energy mode) ocean: NEMO-OPA (eORCA1.3, tripolar primarily 1deg; 362 x 332 longitude/latitude; 75 levels; top grid cell 0-2 m) ocnBgchem: NEMO-PISCES seaIce: NEMO-LIM3",
+            "source_id": "IPSL-CM6A-LR",
+            "source_type": "AOGCM BGC",
+            "status": "2019-11-09;created;by nhn2@columbia.edu",
+            "sub_experiment": "none",
+            "sub_experiment_id": "none",
+            "table_id": "Omon",
+            "title": "IPSL-CM6A-LR model output prepared for CMIP6 / CMIP historical",
+            "tracking_id": "hdl:21.14100/dc824b97-b288-4ec0-adde-8dbcfa3b0095",
+            "variable_id": "tos",
+            "variant_label": "r4i1p1f1",
+            "version_id": "v20180803"
+        },
+        "IPSL-CM6A-LR/historical/.zgroup": {
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/historical/area/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/historical/area/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "standard_name": "cell_area",
+            "units": "m2"
+        },
+        "IPSL-CM6A-LR/historical/time/.zarray": {
+            "chunks": [
+                1980
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1980
+            ],
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/historical/time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "axis": "T",
+            "bounds": "time_bounds",
+            "calendar": "gregorian",
+            "long_name": "Time axis",
+            "standard_name": "time",
+            "time_origin": "1850-01-01 00:00:00",
+            "units": "hours since 1850-01-16T12:00:00"
+        },
+        "IPSL-CM6A-LR/historical/time_bounds/.zarray": {
+            "chunks": [
+                1980,
+                2
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1980,
+                2
+            ],
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/historical/time_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "bnds"
+            ],
+            "calendar": "proleptic_gregorian",
+            "units": "days since 1850-01-01 00:00:00"
+        },
+        "IPSL-CM6A-LR/historical/tos/.zarray": {
+            "chunks": [
+                1980
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1980
+            ],
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/historical/tos/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "cell_measures": "area: areacello",
+            "cell_methods": "area: mean where sea time: mean",
+            "description": "This may differ from \"surface temperature\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+            "history": "none",
+            "interval_operation": "2700 s",
+            "interval_write": "1 month",
+            "long_name": "Sea Surface Temperature",
+            "online_operation": "average",
+            "standard_name": "sea_surface_temperature",
+            "units": "degC"
+        },
+        "IPSL-CM6A-LR/ssp126/.zattrs": {
+            "CMIP6_CV_version": "cv=6.2.15.1",
+            "Conventions": "CF-1.7 CMIP-6.2",
+            "EXPID": "ssp126",
+            "activity_id": "ScenarioMIP",
+            "branch_method": "standard",
+            "branch_time_in_child": 0.0,
+            "branch_time_in_parent": 60265.0,
+            "contact": "ipsl-cmip6@listes.ipsl.fr",
+            "creation_date": "2019-09-30T20:18:42Z",
+            "data_specs_version": "01.00.28",
+            "description": "Future scenario with low radiative forcing by the end of century. Following approximately RCP2.6 global forcing pathway but with new forcing based on SSP1. Concentration-driven. As a tier 2 option, this simulation should be extended to year 2300",
+            "dr2xml_md5sum": "b6f602401512e82e2d7cadc2c6f36c2a",
+            "dr2xml_version": "1.16",
+            "experiment": "update of RCP2.6 based on SSP1",
+            "experiment_id": "ssp126",
+            "external_variables": "areacello",
+            "forcing_index": 1,
+            "frequency": "mon",
+            "further_info_url": "https://furtherinfo.es-doc.org/CMIP6.IPSL.IPSL-CM6A-LR.ssp126.none.r4i1p1f1",
+            "grid": "native ocean tri-polar grid with 105 k ocean cells",
+            "grid_label": "gn",
+            "history": "none",
+            "initialization_index": 1,
+            "institution": "Institut Pierre Simon Laplace, Paris 75252, France",
+            "institution_id": "IPSL",
+            "license": "CMIP6 model data produced by IPSL is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (https://creativecommons.org/licenses). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file) and at https://cmc.ipsl.fr/. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+            "mip_era": "CMIP6",
+            "model_version": "6.1.10",
+            "name": "/ccc/work/cont003/gencmip6/oboucher/IGCM_OUT/IPSLCM6/PROD/ssp126/CM61-LR-scen-ssp126-r4/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_ssp126_r4i1p1f1_gn_%start_date%-%end_date%",
+            "netcdf_tracking_ids": "hdl:21.14100/7304c918-d23c-4a6d-adc2-f4af7c76498e",
+            "nominal_resolution": "100 km",
+            "parent_activity_id": "CMIP",
+            "parent_experiment_id": "historical",
+            "parent_mip_era": "CMIP6",
+            "parent_source_id": "IPSL-CM6A-LR",
+            "parent_time_units": "days since 1850-01-01 00:00:00",
+            "parent_variant_label": "r4i1p1f1",
+            "physics_index": 1,
+            "product": "model-output",
+            "realization_index": 4,
+            "realm": "ocean",
+            "source": "IPSL-CM6A-LR (2017):  atmos: LMDZ (NPv6, N96; 144 x 143 longitude/latitude; 79 levels; top level 40000 m) land: ORCHIDEE (v2.0, Water/Carbon/Energy mode) ocean: NEMO-OPA (eORCA1.3, tripolar primarily 1deg; 362 x 332 longitude/latitude; 75 levels; top grid cell 0-2 m) ocnBgchem: NEMO-PISCES seaIce: NEMO-LIM3",
+            "source_id": "IPSL-CM6A-LR",
+            "source_type": "AOGCM BGC",
+            "status": "2020-02-22;created; by gcs.cmip6.ldeo@gmail.com",
+            "sub_experiment": "none",
+            "sub_experiment_id": "none",
+            "table_id": "Omon",
+            "title": "IPSL-CM6A-LR model output prepared for CMIP6 / ScenarioMIP ssp126",
+            "tracking_id": "hdl:21.14100/7304c918-d23c-4a6d-adc2-f4af7c76498e",
+            "variable_id": "tos",
+            "variant_info": "Each member starts from the corresponding member of its parent experiment. Information provided by this attribute may in some cases be flawed. Users can find more comprehensive and up-to-date documentation via the further_info_url global attribute.",
+            "variant_label": "r4i1p1f1",
+            "version_id": "v20191121"
+        },
+        "IPSL-CM6A-LR/ssp126/.zgroup": {
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/ssp126/area/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/ssp126/area/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "standard_name": "cell_area",
+            "units": "m2"
+        },
+        "IPSL-CM6A-LR/ssp126/time/.zarray": {
+            "chunks": [
+                1032
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032
+            ],
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/ssp126/time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "axis": "T",
+            "bounds": "time_bounds",
+            "calendar": "gregorian",
+            "long_name": "Time axis",
+            "standard_name": "time",
+            "time_origin": "2015-01-01 00:00:00",
+            "units": "hours since 2015-01-16T12:00:00"
+        },
+        "IPSL-CM6A-LR/ssp126/time_bounds/.zarray": {
+            "chunks": [
+                1032,
+                2
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032,
+                2
+            ],
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/ssp126/time_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "bnds"
+            ],
+            "calendar": "proleptic_gregorian",
+            "units": "days since 2015-01-01 00:00:00"
+        },
+        "IPSL-CM6A-LR/ssp126/tos/.zarray": {
+            "chunks": [
+                1032
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032
+            ],
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/ssp126/tos/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "cell_measures": "area: areacello",
+            "cell_methods": "area: mean where sea time: mean",
+            "description": "This may differ from \"surface temperature\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+            "history": "none",
+            "interval_operation": "2700 s",
+            "interval_write": "1 month",
+            "long_name": "Sea Surface Temperature",
+            "online_operation": "average",
+            "standard_name": "sea_surface_temperature",
+            "units": "degC"
+        },
+        "IPSL-CM6A-LR/ssp585/.zattrs": {
+            "CMIP6_CV_version": "cv=6.2.15.1",
+            "Conventions": "CF-1.7 CMIP-6.2",
+            "EXPID": "ssp585",
+            "activity_id": "ScenarioMIP",
+            "branch_method": "standard",
+            "branch_time_in_child": 0.0,
+            "branch_time_in_parent": 60265.0,
+            "contact": "ipsl-cmip6@listes.ipsl.fr",
+            "creation_date": "2019-10-22T10:48:21Z",
+            "data_specs_version": "01.00.28",
+            "description": "Future scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway but with new forcing based on SSP5. Concentration-driven. As a tier 2 option, this simulation should be extended to year 2300",
+            "dr2xml_md5sum": "b6f602401512e82e2d7cadc2c6f36c2a",
+            "dr2xml_version": "1.16",
+            "experiment": "update of RCP8.5 based on SSP5",
+            "experiment_id": "ssp585",
+            "external_variables": "areacello",
+            "forcing_index": 1,
+            "frequency": "mon",
+            "further_info_url": "https://furtherinfo.es-doc.org/CMIP6.IPSL.IPSL-CM6A-LR.ssp585.none.r4i1p1f1",
+            "grid": "native ocean tri-polar grid with 105 k ocean cells",
+            "grid_label": "gn",
+            "history": "none",
+            "initialization_index": 1,
+            "institution": "Institut Pierre Simon Laplace, Paris 75252, France",
+            "institution_id": "IPSL",
+            "license": "CMIP6 model data produced by IPSL is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (https://creativecommons.org/licenses). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file) and at https://cmc.ipsl.fr/. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+            "mip_era": "CMIP6",
+            "model_version": "6.1.10",
+            "name": "/ccc/work/cont003/gencmip6/dupontel/IGCM_OUT/IPSLCM6/PROD/ssp585/CM61-LR-scen-ssp585-r4/CMIP6/OCE/tos_Omon_IPSL-CM6A-LR_ssp585_r4i1p1f1_gn_%start_date%-%end_date%",
+            "netcdf_tracking_ids": "hdl:21.14100/6304caa0-33b5-49e9-ade5-3f42eec02e8b",
+            "nominal_resolution": "100 km",
+            "parent_activity_id": "CMIP",
+            "parent_experiment_id": "historical",
+            "parent_mip_era": "CMIP6",
+            "parent_source_id": "IPSL-CM6A-LR",
+            "parent_time_units": "days since 1850-01-01 00:00:00",
+            "parent_variant_label": "r4i1p1f1",
+            "physics_index": 1,
+            "product": "model-output",
+            "realization_index": 4,
+            "realm": "ocean",
+            "source": "IPSL-CM6A-LR (2017):  atmos: LMDZ (NPv6, N96; 144 x 143 longitude/latitude; 79 levels; top level 40000 m) land: ORCHIDEE (v2.0, Water/Carbon/Energy mode) ocean: NEMO-OPA (eORCA1.3, tripolar primarily 1deg; 362 x 332 longitude/latitude; 75 levels; top grid cell 0-2 m) ocnBgchem: NEMO-PISCES seaIce: NEMO-LIM3",
+            "source_id": "IPSL-CM6A-LR",
+            "source_type": "AOGCM BGC",
+            "status": "2020-02-03;created; by gcs.cmip6.ldeo@gmail.com",
+            "sub_experiment": "none",
+            "sub_experiment_id": "none",
+            "table_id": "Omon",
+            "title": "IPSL-CM6A-LR model output prepared for CMIP6 / ScenarioMIP ssp585",
+            "tracking_id": "hdl:21.14100/6304caa0-33b5-49e9-ade5-3f42eec02e8b",
+            "variable_id": "tos",
+            "variant_info": "Each member starts from the corresponding member of its parent experiment. Information provided by this attribute may in some cases be flawed. Users can find more comprehensive and up-to-date documentation via the further_info_url global attribute.",
+            "variant_label": "r4i1p1f1",
+            "version_id": "v20191122"
+        },
+        "IPSL-CM6A-LR/ssp585/.zgroup": {
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/ssp585/area/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/ssp585/area/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "standard_name": "cell_area",
+            "units": "m2"
+        },
+        "IPSL-CM6A-LR/ssp585/time/.zarray": {
+            "chunks": [
+                1032
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032
+            ],
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/ssp585/time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "axis": "T",
+            "bounds": "time_bounds",
+            "calendar": "gregorian",
+            "long_name": "Time axis",
+            "standard_name": "time",
+            "time_origin": "2015-01-01 00:00:00",
+            "units": "hours since 2015-01-16T12:00:00"
+        },
+        "IPSL-CM6A-LR/ssp585/time_bounds/.zarray": {
+            "chunks": [
+                1032,
+                2
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032,
+                2
+            ],
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/ssp585/time_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "bnds"
+            ],
+            "calendar": "proleptic_gregorian",
+            "units": "days since 2015-01-01 00:00:00"
+        },
+        "IPSL-CM6A-LR/ssp585/tos/.zarray": {
+            "chunks": [
+                1032
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032
+            ],
+            "zarr_format": 2
+        },
+        "IPSL-CM6A-LR/ssp585/tos/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "cell_measures": "area: areacello",
+            "cell_methods": "area: mean where sea time: mean",
+            "description": "This may differ from \"surface temperature\" in regions of sea ice or floating ice shelves. For models using conservative temperature as the prognostic field, they should report the top ocean layer as surface potential temperature, which is the same as surface in situ temperature.",
+            "history": "none",
+            "interval_operation": "2700 s",
+            "interval_write": "1 month",
+            "long_name": "Sea Surface Temperature",
+            "online_operation": "average",
+            "standard_name": "sea_surface_temperature",
+            "units": "degC"
+        },
+        "MPI-ESM1-2-LR/.zattrs": {},
+        "MPI-ESM1-2-LR/.zgroup": {
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/historical/.zattrs": {
+            "Conventions": "CF-1.7 CMIP-6.2",
+            "activity_id": "CMIP",
+            "branch_method": "standard",
+            "branch_time_in_child": 0.0,
+            "branch_time_in_parent": 54786.0,
+            "cmor_version": "3.5.0",
+            "contact": "cmip6-mpi-esm@dkrz.de",
+            "creation_date": "2019-09-11T19:06:46Z",
+            "data_specs_version": "01.00.30",
+            "experiment": "all-forcing simulation of the recent past",
+            "experiment_id": "historical",
+            "external_variables": "areacello",
+            "forcing_index": 1,
+            "frequency": "mon",
+            "further_info_url": "https://furtherinfo.es-doc.org/CMIP6.MPI-M.MPI-ESM1-2-LR.historical.none.r4i1p1f1",
+            "grid": "gn",
+            "grid_label": "gn",
+            "history": "2019-09-11T19:06:46Z ; CMOR rewrote data to be consistent with CMIP6, CF-1.7 CMIP-6.2 and CF standards.",
+            "initialization_index": 1,
+            "institution": "Max Planck Institute for Meteorology, Hamburg 20146, Germany",
+            "institution_id": "MPI-M",
+            "license": "CMIP6 model data produced by MPI-M is licensed under a Creative Commons Attribution ShareAlike 4.0 International License (https://creativecommons.org/licenses). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file) and. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+            "mip_era": "CMIP6",
+            "netcdf_tracking_ids": "hdl:21.14100/05c64286-dda4-40e8-9fab-1b59070430d1\nhdl:21.14100/e5b2f3e2-bda8-4922-9954-a0bb3b91dd6a\nhdl:21.14100/f264c578-2bd7-4b52-87e6-d81032d8be34\nhdl:21.14100/ae2d4ced-1c9c-4948-9349-dd8b9b53580e\nhdl:21.14100/dda24554-142a-4343-b990-a8551938f4e9\nhdl:21.14100/c2f80ce7-efc4-4c9d-8586-761a9ce97276\nhdl:21.14100/6d6b5b3f-12bb-4c1c-9225-0bb2597e50c0\nhdl:21.14100/aa7063c3-2f12-40f3-b3e4-e14013fb3561\nhdl:21.14100/87745e24-c71b-4638-a85f-ff598e7eadaa",
+            "nominal_resolution": "250 km",
+            "parent_activity_id": "CMIP",
+            "parent_experiment_id": "piControl",
+            "parent_mip_era": "CMIP6",
+            "parent_source_id": "MPI-ESM1-2-LR",
+            "parent_time_units": "days since 1850-1-1 00:00:00",
+            "parent_variant_label": "r1i1p1f1",
+            "physics_index": 1,
+            "product": "model-output",
+            "project_id": "CMIP6",
+            "realization_index": 4,
+            "realm": "ocean",
+            "references": "MPI-ESM: Mauritsen, T. et al. (2019), Developments in the MPI\u2010M Earth System Model version 1.2 (MPI\u2010ESM1.2) and Its Response to Increasing CO2, J. Adv. Model. Earth Syst.,11, 998-1038, doi:10.1029/2018MS001400,\nMueller, W.A. et al. (2018): A high\u2010resolution version of the Max Planck Institute Earth System Model MPI\u2010ESM1.2\u2010HR. J. Adv. Model. EarthSyst.,10,1383\u20131413, doi:10.1029/2017MS001217",
+            "source": "MPI-ESM1.2-LR (2017): \naerosol: none, prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)\natmosChem: none\nland: JSBACH3.20\nlandIce: none/prescribed\nocean: MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model)",
+            "source_id": "MPI-ESM1-2-LR",
+            "source_type": "AOGCM",
+            "status": "2020-05-09;created; by gcs.cmip6.ldeo@gmail.com",
+            "sub_experiment": "none",
+            "sub_experiment_id": "none",
+            "table_id": "Omon",
+            "table_info": "Creation Date:(09 May 2019) MD5:e6ef8ececc8f338646ebfb3aeed36bfc",
+            "title": "MPI-ESM1-2-LR output prepared for CMIP6",
+            "tracking_id": "hdl:21.14100/05c64286-dda4-40e8-9fab-1b59070430d1\nhdl:21.14100/e5b2f3e2-bda8-4922-9954-a0bb3b91dd6a\nhdl:21.14100/f264c578-2bd7-4b52-87e6-d81032d8be34\nhdl:21.14100/ae2d4ced-1c9c-4948-9349-dd8b9b53580e\nhdl:21.14100/dda24554-142a-4343-b990-a8551938f4e9\nhdl:21.14100/c2f80ce7-efc4-4c9d-8586-761a9ce97276\nhdl:21.14100/6d6b5b3f-12bb-4c1c-9225-0bb2597e50c0\nhdl:21.14100/aa7063c3-2f12-40f3-b3e4-e14013fb3561\nhdl:21.14100/87745e24-c71b-4638-a85f-ff598e7eadaa",
+            "variable_id": "tos",
+            "variant_label": "r4i1p1f1",
+            "version_id": "v20190710"
+        },
+        "MPI-ESM1-2-LR/historical/.zgroup": {
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/historical/lat_bounds/.zarray": {
+            "chunks": [
+                4
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                4
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/historical/lat_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "vertex"
+            ],
+            "units": "degrees_north"
+        },
+        "MPI-ESM1-2-LR/historical/lon_bounds/.zarray": {
+            "chunks": [
+                4
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                4
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/historical/lon_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "vertex"
+            ],
+            "units": "degrees_east"
+        },
+        "MPI-ESM1-2-LR/historical/time/.zarray": {
+            "chunks": [
+                1980
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1980
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/historical/time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "axis": "T",
+            "bounds": "time_bnds",
+            "calendar": "proleptic_gregorian",
+            "long_name": "time",
+            "standard_name": "time",
+            "units": "hours since 1850-01-16T12:00:00"
+        },
+        "MPI-ESM1-2-LR/historical/time_bounds/.zarray": {
+            "chunks": [
+                1980,
+                2
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1980,
+                2
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/historical/time_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "bnds"
+            ],
+            "calendar": "proleptic_gregorian",
+            "units": "days since 1850-01-01 00:00:00"
+        },
+        "MPI-ESM1-2-LR/historical/tos/.zarray": {
+            "chunks": [
+                1980
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1980
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/historical/tos/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "cell_measures": "area: areacello",
+            "cell_methods": "area: mean where sea time: mean",
+            "comment": "Temperature of upper boundary of the liquid ocean, including temperatures below sea-ice and floating ice shelves.",
+            "history": "2019-09-11T19:06:46Z altered by CMOR: replaced missing value flag (-9e+33) and corresponding data with standard missing value (1e+20).",
+            "long_name": "Sea Surface Temperature",
+            "original_name": "tos",
+            "standard_name": "sea_surface_temperature",
+            "units": "degC"
+        },
+        "MPI-ESM1-2-LR/ssp126/.zattrs": {
+            "Conventions": "CF-1.7 CMIP-6.2",
+            "activity_id": "ScenarioMIP",
+            "branch_method": "standard",
+            "branch_time_in_child": 60265.0,
+            "branch_time_in_parent": 60265.0,
+            "cmor_version": "3.5.0",
+            "contact": "cmip6-mpi-esm@dkrz.de",
+            "creation_date": "2019-11-12T16:47:53Z",
+            "data_specs_version": "01.00.30",
+            "experiment": "update of RCP2.6 based on SSP1",
+            "experiment_id": "ssp126",
+            "external_variables": "areacello",
+            "forcing_index": 1,
+            "frequency": "mon",
+            "further_info_url": "https://furtherinfo.es-doc.org/CMIP6.MPI-M.MPI-ESM1-2-LR.ssp126.none.r4i1p1f1",
+            "grid": "gn",
+            "grid_label": "gn",
+            "history": "2019-11-12T16:47:53Z ; CMOR rewrote data to be consistent with CMIP6, CF-1.7 CMIP-6.2 and CF standards.",
+            "initialization_index": 1,
+            "institution": "Max Planck Institute for Meteorology, Hamburg 20146, Germany",
+            "institution_id": "MPI-M",
+            "license": "CMIP6 model data produced by MPI-M is licensed under a Creative Commons Attribution ShareAlike 4.0 International License (https://creativecommons.org/licenses). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file) and. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+            "mip_era": "CMIP6",
+            "netcdf_tracking_ids": "hdl:21.14100/ec9fb787-2951-42e0-b108-70daac6206b4\nhdl:21.14100/e44afde9-9707-42e6-aab7-1c7667fb45ea\nhdl:21.14100/f997a8fa-f28b-45ec-9eb2-e57d7482517b\nhdl:21.14100/9c611132-f7f1-4d61-b170-21ac870cef2b\nhdl:21.14100/ce9d1943-7e83-4e2e-9064-b75c6e565fd9",
+            "nominal_resolution": "250 km",
+            "parent_activity_id": "CMIP",
+            "parent_experiment_id": "historical",
+            "parent_mip_era": "CMIP6",
+            "parent_source_id": "MPI-ESM1-2-LR",
+            "parent_time_units": "days since 1850-1-1 00:00:00",
+            "parent_variant_label": "r4i1p1f1",
+            "physics_index": 1,
+            "product": "model-output",
+            "project_id": "CMIP6",
+            "realization_index": 4,
+            "realm": "ocean",
+            "references": "MPI-ESM: Mauritsen, T. et al. (2019), Developments in the MPI\u2010M Earth System Model version 1.2 (MPI\u2010ESM1.2) and Its Response to Increasing CO2, J. Adv. Model. Earth Syst.,11, 998-1038, doi:10.1029/2018MS001400,\nMueller, W.A. et al. (2018): A high\u2010resolution version of the Max Planck Institute Earth System Model MPI\u2010ESM1.2\u2010HR. J. Adv. Model. EarthSyst.,10,1383\u20131413, doi:10.1029/2017MS001217",
+            "source": "MPI-ESM1.2-LR (2017): \naerosol: none, prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)\natmosChem: none\nland: JSBACH3.20\nlandIce: none/prescribed\nocean: MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model)",
+            "source_id": "MPI-ESM1-2-LR",
+            "source_type": "AOGCM",
+            "status": "2020-05-11;created; by gcs.cmip6.ldeo@gmail.com",
+            "sub_experiment": "none",
+            "sub_experiment_id": "none",
+            "table_id": "Omon",
+            "table_info": "Creation Date:(09 May 2019) MD5:e6ef8ececc8f338646ebfb3aeed36bfc",
+            "title": "MPI-ESM1-2-LR output prepared for CMIP6",
+            "tracking_id": "hdl:21.14100/ec9fb787-2951-42e0-b108-70daac6206b4\nhdl:21.14100/e44afde9-9707-42e6-aab7-1c7667fb45ea\nhdl:21.14100/f997a8fa-f28b-45ec-9eb2-e57d7482517b\nhdl:21.14100/9c611132-f7f1-4d61-b170-21ac870cef2b\nhdl:21.14100/ce9d1943-7e83-4e2e-9064-b75c6e565fd9",
+            "variable_id": "tos",
+            "variant_label": "r4i1p1f1",
+            "version_id": "v20190710"
+        },
+        "MPI-ESM1-2-LR/ssp126/.zgroup": {
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/ssp126/lat_bounds/.zarray": {
+            "chunks": [
+                4
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                4
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/ssp126/lat_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "vertex"
+            ],
+            "units": "degrees_north"
+        },
+        "MPI-ESM1-2-LR/ssp126/lon_bounds/.zarray": {
+            "chunks": [
+                4
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                4
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/ssp126/lon_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "vertex"
+            ],
+            "units": "degrees_east"
+        },
+        "MPI-ESM1-2-LR/ssp126/time/.zarray": {
+            "chunks": [
+                1032
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/ssp126/time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "axis": "T",
+            "bounds": "time_bnds",
+            "calendar": "proleptic_gregorian",
+            "long_name": "time",
+            "standard_name": "time",
+            "units": "hours since 2015-01-16T12:00:00"
+        },
+        "MPI-ESM1-2-LR/ssp126/time_bounds/.zarray": {
+            "chunks": [
+                1032,
+                2
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032,
+                2
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/ssp126/time_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "bnds"
+            ],
+            "calendar": "proleptic_gregorian",
+            "units": "days since 2015-01-01 00:00:00"
+        },
+        "MPI-ESM1-2-LR/ssp126/tos/.zarray": {
+            "chunks": [
+                1032
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/ssp126/tos/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "cell_measures": "area: areacello",
+            "cell_methods": "area: mean where sea time: mean",
+            "comment": "Temperature of upper boundary of the liquid ocean, including temperatures below sea-ice and floating ice shelves.",
+            "history": "2019-11-12T16:47:53Z altered by CMOR: replaced missing value flag (-9e+33) and corresponding data with standard missing value (1e+20).",
+            "long_name": "Sea Surface Temperature",
+            "original_name": "tos",
+            "standard_name": "sea_surface_temperature",
+            "units": "degC"
+        },
+        "MPI-ESM1-2-LR/ssp585/.zattrs": {
+            "Conventions": "CF-1.7 CMIP-6.2",
+            "activity_id": "ScenarioMIP",
+            "branch_method": "standard",
+            "branch_time_in_child": 60265.0,
+            "branch_time_in_parent": 60265.0,
+            "cmor_version": "3.5.0",
+            "contact": "cmip6-mpi-esm@dkrz.de",
+            "creation_date": "2019-11-13T14:31:27Z",
+            "data_specs_version": "01.00.30",
+            "experiment": "update of RCP8.5 based on SSP5",
+            "experiment_id": "ssp585",
+            "external_variables": "areacello",
+            "forcing_index": 1,
+            "frequency": "mon",
+            "further_info_url": "https://furtherinfo.es-doc.org/CMIP6.MPI-M.MPI-ESM1-2-LR.ssp585.none.r4i1p1f1",
+            "grid": "gn",
+            "grid_label": "gn",
+            "history": "2019-11-13T14:31:27Z ; CMOR rewrote data to be consistent with CMIP6, CF-1.7 CMIP-6.2 and CF standards.",
+            "initialization_index": 1,
+            "institution": "Max Planck Institute for Meteorology, Hamburg 20146, Germany",
+            "institution_id": "MPI-M",
+            "license": "CMIP6 model data produced by MPI-M is licensed under a Creative Commons Attribution ShareAlike 4.0 International License (https://creativecommons.org/licenses). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file) and. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+            "mip_era": "CMIP6",
+            "netcdf_tracking_ids": "hdl:21.14100/3e2e872b-a317-4200-8074-51b8726272d3\nhdl:21.14100/0d55db93-f7b6-4168-b73b-c0b78bed3295\nhdl:21.14100/a04c498c-6b4c-4a9c-bd13-4a14531bb90c\nhdl:21.14100/7d1fb390-5d7f-4b64-afe1-b98694328753\nhdl:21.14100/fe65025c-0e8b-437d-bc77-c69d0fe3d651",
+            "nominal_resolution": "250 km",
+            "parent_activity_id": "CMIP",
+            "parent_experiment_id": "historical",
+            "parent_mip_era": "CMIP6",
+            "parent_source_id": "MPI-ESM1-2-LR",
+            "parent_time_units": "days since 1850-1-1 00:00:00",
+            "parent_variant_label": "r4i1p1f1",
+            "physics_index": 1,
+            "product": "model-output",
+            "project_id": "CMIP6",
+            "realization_index": 4,
+            "realm": "ocean",
+            "references": "MPI-ESM: Mauritsen, T. et al. (2019), Developments in the MPI\u2010M Earth System Model version 1.2 (MPI\u2010ESM1.2) and Its Response to Increasing CO2, J. Adv. Model. Earth Syst.,11, 998-1038, doi:10.1029/2018MS001400,\nMueller, W.A. et al. (2018): A high\u2010resolution version of the Max Planck Institute Earth System Model MPI\u2010ESM1.2\u2010HR. J. Adv. Model. EarthSyst.,10,1383\u20131413, doi:10.1029/2017MS001217",
+            "source": "MPI-ESM1.2-LR (2017): \naerosol: none, prescribed MACv2-SP\natmos: ECHAM6.3 (spectral T63; 192 x 96 longitude/latitude; 47 levels; top level 0.01 hPa)\natmosChem: none\nland: JSBACH3.20\nlandIce: none/prescribed\nocean: MPIOM1.63 (bipolar GR1.5, approximately 1.5deg; 256 x 220 longitude/latitude; 40 levels; top grid cell 0-12 m)\nocnBgchem: HAMOCC6\nseaIce: unnamed (thermodynamic (Semtner zero-layer) dynamic (Hibler 79) sea ice model)",
+            "source_id": "MPI-ESM1-2-LR",
+            "source_type": "AOGCM",
+            "status": "2020-05-12;created; by gcs.cmip6.ldeo@gmail.com",
+            "sub_experiment": "none",
+            "sub_experiment_id": "none",
+            "table_id": "Omon",
+            "table_info": "Creation Date:(09 May 2019) MD5:e6ef8ececc8f338646ebfb3aeed36bfc",
+            "title": "MPI-ESM1-2-LR output prepared for CMIP6",
+            "tracking_id": "hdl:21.14100/3e2e872b-a317-4200-8074-51b8726272d3\nhdl:21.14100/0d55db93-f7b6-4168-b73b-c0b78bed3295\nhdl:21.14100/a04c498c-6b4c-4a9c-bd13-4a14531bb90c\nhdl:21.14100/7d1fb390-5d7f-4b64-afe1-b98694328753\nhdl:21.14100/fe65025c-0e8b-437d-bc77-c69d0fe3d651",
+            "variable_id": "tos",
+            "variant_label": "r4i1p1f1",
+            "version_id": "v20190710"
+        },
+        "MPI-ESM1-2-LR/ssp585/.zgroup": {
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/ssp585/lat_bounds/.zarray": {
+            "chunks": [
+                4
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                4
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/ssp585/lat_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "vertex"
+            ],
+            "units": "degrees_north"
+        },
+        "MPI-ESM1-2-LR/ssp585/lon_bounds/.zarray": {
+            "chunks": [
+                4
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                4
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/ssp585/lon_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "vertex"
+            ],
+            "units": "degrees_east"
+        },
+        "MPI-ESM1-2-LR/ssp585/time/.zarray": {
+            "chunks": [
+                1032
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/ssp585/time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "axis": "T",
+            "bounds": "time_bnds",
+            "calendar": "proleptic_gregorian",
+            "long_name": "time",
+            "standard_name": "time",
+            "units": "hours since 2015-01-16T12:00:00"
+        },
+        "MPI-ESM1-2-LR/ssp585/time_bounds/.zarray": {
+            "chunks": [
+                1032,
+                2
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032,
+                2
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/ssp585/time_bounds/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "bnds"
+            ],
+            "calendar": "proleptic_gregorian",
+            "units": "days since 2015-01-01 00:00:00"
+        },
+        "MPI-ESM1-2-LR/ssp585/tos/.zarray": {
+            "chunks": [
+                1032
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1032
+            ],
+            "zarr_format": 2
+        },
+        "MPI-ESM1-2-LR/ssp585/tos/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "cell_measures": "area: areacello",
+            "cell_methods": "area: mean where sea time: mean",
+            "comment": "Temperature of upper boundary of the liquid ocean, including temperatures below sea-ice and floating ice shelves.",
+            "history": "2019-11-13T14:31:27Z altered by CMOR: replaced missing value flag (-9e+33) and corresponding data with standard missing value (1e+20).",
+            "long_name": "Sea Surface Temperature",
+            "original_name": "tos",
+            "standard_name": "sea_surface_temperature",
+            "units": "degC"
+        }
+    },
+    "zarr_consolidated_format": 1
+}

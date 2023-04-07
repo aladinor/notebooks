@@ -134,6 +134,7 @@ dmypy.json
 /pem
 /gis
 /zarr
+cmip_timeseries
 # Others
 .idea/
 src/dask-worker-space

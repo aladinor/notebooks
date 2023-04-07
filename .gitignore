@@ -135,6 +135,8 @@ dmypy.json
 /gis
 /zarr
 cmip_timeseries
+multiple_vcp_test.zarr
+vcp_test.zarr
 # Others
 .idea/
 src/dask-worker-space

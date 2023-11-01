@@ -134,6 +134,7 @@ dmypy.json
 /pem
 /gis
 /zarr
+/pictures
 cmip_timeseries
 multiple_vcp_test.zarr
 vcp_test.zarr
